@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/6dfd7984e0.js" crossorigin="anonymous"></script>
+    <!-- css -->
     <style>
         .seat{
             display: flex;
@@ -58,13 +59,15 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto mt-6">
-        <section class=" bg-[url(images/banner.png)] bg-no-repeat h-[550px] m-6 bg-center">
+    <main id="main" class="container mx-auto mt-6">
+        <section id="ena" class=" bg-[url(images/banner.png)] bg-no-repeat h-[550px] m-6 bg-center">
             <div class="flex flex-col justify-center px-16 items-center h-[500px] gap-12">
                 <h1 class="text-white text-2xl lg:text-5xl font-extrabold">End-to-End Travel with</h1>
                 <h2 class="text-lime-500 text-2xl lg:text-5xl font-extrabold">Ena Paribahan</h2>
                 <p class="text-white">we are give best service. Our Bus are most good for you.</p>
-                <button class="bg-lime-500 h-12 w-28 rounded-lg text-black">Buy Ticket</button>
+                <!-- js -->
+                <a onclick="buyNow()" class="btn border-lime-500 bg-lime-500 h-12 w-28 rounded-lg text-black">Buy Ticket</a>
+               
             </div>
             <div class="grid mt-6 grid-rows-1 lg:flex lg:justify-center gap-12">
                 <div
@@ -190,7 +193,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-gray-300 rounded-lg px-20">
+        <section id="buy-ticket" class="bg-gray-300 rounded-lg px-20">
             <div class="flex">
                 <!-- 1st -->
                 <div class="flex-1">
@@ -211,85 +214,100 @@
                         <i class="fa-solid fa-car bg-orange-600 py-2 px-2 text-white"></i>
                     </div>
                     <!-- 3 -->
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">A</div>
-                        <div class="seat bg-gray-500 text-black">A1</div>
-                        <div class="seat bg-gray-500 text-black">A2</div>
-                        <div class="seat bg-gray-500 text-black">A3</div>
-                        <div class="seat bg-gray-500 text-black">A4</div>
+                 <div class="mb-4">
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">A</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen()" id="A1" class="btn bg-red-500  h-8 w-10 text-black">A1</a>
+                        <a onclick="addGreen2()" id="A2" class="btn bg-red-500  h-8 w-10 text-black">A2</a>
+                        <a onclick="addGreen3()" id="A3" class="btn bg-red-500  h-8 w-10 text-black">A3</a>
+                        <a onclick="addGreen4()" id="A4" class="btn bg-red-500  h-8 w-10 text-black">A4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">B</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen5()" id="B1" class="btn bg-red-500  h-8 w-10 text-black">B1</a>
+                        <a onclick="addGreen6()" id="B2" class="btn bg-red-500  h-8 w-10 text-black">B2</a>
+                        <a onclick="addGreen7()" id="B3" class="btn bg-red-500  h-8 w-10 text-black">B3</a>
+                        <a onclick="addGreen8()" id="B4" class="btn bg-red-500  h-8 w-10 text-black">B4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">C</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen9()" id="C1" class="btn bg-red-500  h-8 w-10 text-black">C1</a>
+                        <a onclick="addGreen10()" id="C2" class="btn bg-red-500  h-8 w-10 text-black">C2</a>
+                        <a onclick="addGreen11()" id="C3" class="btn bg-red-500  h-8 w-10 text-black">C3</a>
+                        <a onclick="addGreen12()" id="C4" class="btn bg-red-500  h-8 w-10 text-black">C4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">D</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen13()" id="D1" class="btn bg-red-500  h-8 w-10 text-black">D1</a>
+                        <a onclick="addGreen14()" id="D2" class="btn bg-red-500  h-8 w-10 text-black">D2</a>
+                        <a onclick="addGreen15()" id="D3" class="btn bg-red-500  h-8 w-10 text-black">D3</a>
+                        <a onclick="addGreen16()" id="D4" class="btn bg-red-500  h-8 w-10 text-black">D4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">E</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen17()" id="E1" class="btn bg-red-500  h-8 w-10 text-black">E1</a>
+                        <a onclick="addGreen18()" id="E2" class="btn bg-red-500  h-8 w-10 text-black">E2</a>
+                        <a onclick="addGreen19()" id="E3" class="btn bg-red-500  h-8 w-10 text-black">E3</a>
+                        <a onclick="addGreen20()" id="E4" class="btn bg-red-500  h-8 w-10 text-black">E4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">F</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen21()" id="F1" class="btn bg-red-500  h-8 w-10 text-black">F1</a>
+                        <a onclick="addGreen22()" id="F2" class="btn bg-red-500  h-8 w-10 text-black">F2</a>
+                        <a onclick="addGreen23()" id="F3" class="btn bg-red-500  h-8 w-10 text-black">F3</a>
+                        <a onclick="addGreen24()" id="F4" class="btn bg-red-500  h-8 w-10 text-black">F4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">G</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen25()" id="G1" class="btn bg-red-500 h-8 w-10 text-black">G1</a>
+                        <a onclick="addGreen26()" id="G2" class="btn bg-red-500 h-8 w-10 text-black">G2</a>
+                        <a onclick="addGreen27()" id="G3" class="btn bg-red-500 h-8 w-10 text-black">G3</a>
+                        <a onclick="addGreen28()" id="G4" class="btn bg-red-500 h-8 w-10 text-black">G4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">H</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen29()" id="H1" class="btn bg-red-500  h-8 w-10 text-black">H1</a>
+                        <a onclick="addGreen30()" id="H2" class="btn bg-red-500  h-8 w-10 text-black">H2</a>
+                        <a onclick="addGreen31()" id="H3" class="btn bg-red-500  h-8 w-10 text-black">H3</a>
+                        <a onclick="addGreen32()" id="H4" class="btn bg-red-500  h-8 w-10 text-black">H4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">I</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen33()" id="I1" class="btn bg-red-500  h-8 w-10 text-black">I1</a>
+                        <a onclick="addGreen34()" id="I2" class="btn bg-red-500  h-8 w-10 text-black">I2</a>
+                        <a onclick="addGreen35()" id="I3" class="btn bg-red-500  h-8 w-10 text-black">I3</a>
+                        <a onclick="addGreen36()" id="I4" class="btn bg-red-500  h-8 w-10 text-black">I4</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-20 mb-5">
+                        <div class="seats text-3xl">J</div>
+                        <div class="flex gap-32">
+                        <a onclick="addGreen37()" id="J1" class="btn bg-red-500 h-8 w-10 text-black">J1</a>
+                        <a onclick="addGreen38()" id="J2" class="btn bg-red-500 h-8 w-10 text-black">J2</a>
+                        <a onclick="addGreen39()" id="J3" class="btn bg-red-500 h-8 w-10 text-black">J3</a>
+                        <a onclick="addGreen40()" id="J4" class="btn bg-red-500 h-8 w-10 text-black">J4</a>
+                        </div>
                     </div>
 
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">B</div>
-                        <div class="seat bg-gray-500 text-black">B1</div>
-                        <div class="seat bg-gray-500 text-black">B2</div>
-                        <div class="seat bg-gray-500 text-black">B3</div>
-                        <div class="seat bg-gray-500 text-black">B4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">C</div>
-                        <div class="seat bg-gray-500 text-black">C1</div>
-                        <div class="seat bg-gray-500 text-black">C2</div>
-                        <div class="seat bg-gray-500 text-black">C3</div>
-                        <div class="seat bg-gray-500 text-black">C4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">D</div>
-                        <div class="seat bg-gray-500 text-black">D1</div>
-                        <div class="seat bg-gray-500 text-black">D2</div>
-                        <div class="seat bg-gray-500 text-black">D3</div>
-                        <div class="seat bg-gray-500 text-black">D4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">E</div>
-                        <div class="seat bg-gray-500 text-black">E1</div>
-                        <div class="seat bg-gray-500 text-black">E2</div>
-                        <div class="seat bg-gray-500 text-black">E3</div>
-                        <div class="seat bg-gray-500 text-black">E4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">F</div>
-                        <div class="seat bg-gray-500 text-black">F1</div>
-                        <div class="seat bg-gray-500 text-black">F2</div>
-                        <div class="seat bg-gray-500 text-black">F3</div>
-                        <div class="seat bg-gray-500 text-black">F4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">G</div>
-                        <div class="seat bg-gray-500 text-black">G1</div>
-                        <div class="seat bg-gray-500 text-black">G2</div>
-                        <div class="seat bg-gray-500 text-black">G3</div>
-                        <div class="seat bg-gray-500 text-black">G4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">H</div>
-                        <div class="seat bg-gray-500 text-black">H1</div>
-                        <div class="seat bg-gray-500 text-black">H2</div>
-                        <div class="seat bg-gray-500 text-black">H3</div>
-                        <div class="seat bg-gray-500 text-black">H4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2 mb-5">
-                        <div class="seats">I</div>
-                        <div class="seat bg-gray-500 text-black">I1</div>
-                        <div class="seat bg-gray-500 text-black">I2</div>
-                        <div class="seat bg-gray-500 text-black">I3</div>
-                        <div class="seat bg-gray-500 text-black">I4</div>
-                    </div>
-
-                    <div class="grid grid-cols-5 gap-2">
-                    <div class="seats">J</div>
-                    <div class="seat bg-gray-500 text-black">J1</div>
-                    <div class="seat bg-gray-500 text-black">J2</div>
-                    <div class="seat bg-gray-500 text-black">J3</div>
-                    <div class="seat bg-gray-500 text-black">J4</div>
-                    </div>
+                   </div>
+                   
                 </div>
                 <!-- 2nd -->
                 <div></div>
@@ -351,7 +369,7 @@
                     <input type="email" id="" class="rounded-lg h-10 pl-3 mt-2 py-5" placeholder="Enter your email id">
                 </div>
                 <div class="flex items-center justify-center">
-                <button class=" bg-pink-600 text-white rounded-lg h-10 pl-3 mt-5  w-96 ">Next</button>
+                <a onclick="Result()" class=" btn bg-pink-600 text-white rounded-lg h-10 pl-3 mt-5  w-96 ">Next</a>
                 </div>
                 <div class="flex gap-16 mb-9">
                     <h3 class="decoration-solid">Terms and Conditions</h3>
@@ -361,25 +379,24 @@
                 </div>
             </div>
         </section>
-        <!-- Next -->
-        <section>
-            <div class="flex justify-center text-center my-10">
-                <div class=" flex flex-col justify-center items-center px-4 bg-pink-800 h-96">
-                <div class="flex justify-center items-cente mb-6">
-                <img class="" src="images/success.png" alt="">
-                </div>
-                <h1 class="text-2xl font-bold text-green-600 mb-4">SUCCESS</h1>
-                <p class="font-semibold text-white">Thank you for Booking Our Bus Seats.</p>
-                <p class="font-semibold text-white">We are working hard to find the best service and deals for you.</p>
-                <p class="text-white">Shortly you will find a confirmation in your email.</p>
-                <button class="bg-green-700 text-white rounded-3xl h-10 w-40 mt-6">Continue</button>
-            </div>
-            </div>
-        </section>
     </main>
-    <footer>
-
-    </footer>
+    <!-- Next -->
+    <section id="success" class="hidden">
+        <div class="flex justify-center text-center my-10">
+            <div class=" flex flex-col justify-center items-center px-4 bg-pink-800 h-96">
+            <div class="flex justify-center items-cente mb-6">
+            <img class="" src="images/success.png" alt="">
+            </div>
+            <h1 class="text-2xl font-bold text-green-600 mb-4">SUCCESS</h1>
+            <p class="font-semibold text-white">Thank you for Booking Our Bus Seats.</p>
+            <p class="font-semibold text-white">We are working hard to find the best service and deals for you.</p>
+            <p class="text-white">Shortly you will find a confirmation in your email.</p>
+            <button class="bg-green-700 text-white rounded-3xl h-10 w-40 mt-6">Continue</button>
+        </div>
+        </div>
+    </section>
+   <!-- js link -->
+    <script src="file/style.js"></script>
 </body>
 
 </html>
